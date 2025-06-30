@@ -4,9 +4,10 @@ const MainProp = (props) => {
   return (
     <div className="user-container">
       <center>
-        <p id='user-name'>{props.name}</p>
+        <h1 id='user-name'>{props.name}</h1>
         <img id="user-img" src={props.img} alt={props.name}></img>
-        <p id='user-desc'>{props.desc}</p>
+        <h2 id='user-desc'>{props.desc}</h2>
+        {props.children}
      </center>
      </div>
   );

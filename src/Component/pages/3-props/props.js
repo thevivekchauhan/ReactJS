@@ -12,6 +12,9 @@ function App(props) {
       <Props name="Vi With Hourse" img={img2} desc="Actually, Vi loves horse."/>
       <Props name="Vi With Style" img={img3} desc="Vi is real stylish hero."/>
       <Props name="Vi With Deep Think" img={img4} desc="Vi is not overthinker but aware about his future"/>
+      <Props>
+        <h3>This is Children Component print.</h3>
+      </Props>
     </div>
   );
 }
