@@ -4,8 +4,9 @@ import React from 'react';
 // import Props from './Component/pages/3-props/props';
 // import Allfunction from './Component/pages/4-function/function';
 // import MyVariable from './Component/pages/5-variables/variables';
-import Lifecycle from "./Component/pages/6-Lifecycle-method/lifecycle";
-// import useEffect from "./Component/pages/6-Lifecycle-method/useEffect";
+// import Lifecycle from "./Component/pages/6-Lifecycle-method/lifecycle";
+// import MyuseEffect from "./Component/pages/6-Lifecycle-method/useEffect";
+import MyuseState from "./Component/pages/7-Hooks/useState"
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
       {/* {/* <Props />/} */}
       {/* <Allfunction /> */}
       {/* <MyVariable/> */}
-      <Lifecycle/>
-      {/* <useEffect/> */}
+      {/* <Lifecycle/> */}
+      {/* <MyuseEffect/> */}
+      <MyuseState/>
     </div>
   );
 }
