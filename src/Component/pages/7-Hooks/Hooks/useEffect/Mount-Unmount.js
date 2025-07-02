@@ -1,3 +1,35 @@
+// best timer which is do mount and unmount
+
+
+// import React, { useState, useEffect } from "react";
+
+// function Timer() {
+//   const [seconds, setSeconds] = useState(0);
+
+//   useEffect(() => {
+//     console.log("⏳ Timer started");
+
+//     const timer = setInterval(() => {
+//       setSeconds((prev) => prev + 1); // increase seconds every second
+//     }, 1000);
+
+//     return () => {
+//       clearInterval(timer);
+//       console.log("🛑 Timer stopped (component unmounted)");
+//     };
+//   }, []);
+
+//   return (
+//     <div style={{ padding: "20px", border: "2px dashed purple", borderRadius: "10px" }}>
+//       <h2>⏱️ Timer: {seconds} seconds</h2>
+//     </div>
+//   );
+// }
+
+// export default Timer;
+
+
+
 import React, {useEffect,useState} from 'react';
 
 function useEff() {
@@ -32,3 +64,5 @@ useEffect(() => {
 }
 
 export default useEff;
+
+
