@@ -4,8 +4,8 @@ function MyuseState() {
   const [count, setCount] = useState(1);
 
   const buttonStyle= {
-          margin: "10px",
-          padding: "10px 10px 10px 10px",
+          margin: "15px",
+          padding: "10px",
           color: "white",
           borderRadius: "5px",
           border: "none",

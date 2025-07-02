@@ -5,8 +5,9 @@ import React from 'react';
 // import Allfunction from './Component/pages/4-function/function';
 // import MyVariable from './Component/pages/5-variables/variables';
 // import Lifecycle from "./Component/pages/6-Lifecycle-method/lifecycle";
-// import MyuseEffect from "./Component/pages/6-Lifecycle-method/useEffect";
-import MyuseState from "./Component/pages/7-Hooks/useState"
+// import MaruuseEffect from "./Component/pages/6-Lifecycle-method/useEffect";
+// import MyuseState from "./Component/pages/7-Hooks/useState"
+import MyuseEffect from "./Component/pages/7-Hooks/useEffect/useEffect"
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
       {/* <Allfunction /> */}
       {/* <MyVariable/> */}
       {/* <Lifecycle/> */}
-      {/* <MyuseEffect/> */}
-      <MyuseState/>
+      {/* <MaruuseEffect/> */}
+      {/* <MyuseState/> */}
+      <MyuseEffect/>
     </div>
   );
 }
