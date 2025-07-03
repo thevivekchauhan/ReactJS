@@ -9,6 +9,7 @@ function UserForm({ onUserAdd }) {
 
     if (!name || !email) {
       alert("Please enter both name and email.");
+      console.log("Name and email are required.");
       return;
     }
 
