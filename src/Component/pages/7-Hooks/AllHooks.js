@@ -2,7 +2,8 @@ import React from 'react';
 // import MyuseState from "./Hooks/useState"
 // import MyuseEffect from "./Hooks/useEffect"
 // import MyuseReducer from "./Hooks/useReducer"
-import MyuseContext from './Hooks/useContext/useContext'
+// import MyuseContext from './Hooks/useContext/useContext'
+// import MyuseMemo from "./Hooks/useMemo";
 
 function Allhooks() {
   return (
@@ -10,7 +11,8 @@ function Allhooks() {
       {/* <MyuseState/> */}
       {/* <MyuseEffect/> */}
       {/* <MyuseReducer/> */}
-      <MyuseContext/>
+      {/* <MyuseContext/> */}
+      {/* <MyuseMemo/> */}
     </div>
   );
 }
