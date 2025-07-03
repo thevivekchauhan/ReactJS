@@ -6,15 +6,18 @@ function MainTask() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    const storedUsers = localStorage.getItem('submittedUsers');
-    if (storedUsers) {
-      setUsers(JSON.parse(storedUsers));
-    }
+    const fetchUsers = async () => {
+      try {
+        const response = await fetch('https://6866397e89803950dbb1c032.mockapi.io/api/v1/users');
+        if (!response.ok) throw new Error('Failed to fetch users');
+        const data = await response.json();
+        setUsers(data);
+      } catch (error) {
+        console.error('Error fetching users:', error);
+      }
+    };
+    fetchUsers();
   }, []);
-
-  useEffect(() => {
-    localStorage.setItem('submittedUsers', JSON.stringify(users));
-  }, [users]);
 
   const addUser = (newUser) => {
     setUsers((prevUsers) => [...prevUsers, newUser]);

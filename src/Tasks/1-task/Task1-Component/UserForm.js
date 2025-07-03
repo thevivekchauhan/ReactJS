@@ -18,7 +18,7 @@ function UserForm({ onUserAdd }) {
     };
 
     try {
-      const response = await fetch('https://jsonplaceholder.typicode.com/users', {
+      const response = await fetch('https://6866397e89803950dbb1c032.mockapi.io/api/v1/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -26,13 +26,16 @@ function UserForm({ onUserAdd }) {
         body: JSON.stringify(userData),
       });
 
+      if (!response.ok) {
+        throw new Error('Failed to add user to API');
+      }
+
       const result = await response.json();
-
       onUserAdd(result);
-
       setName('');
       setEmail('');
     } catch (error) {
+      alert('Error posting user: ' + error.message);
       console.error('Error posting user:', error);
     }
   };
