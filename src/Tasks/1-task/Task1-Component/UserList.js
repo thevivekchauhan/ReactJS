@@ -18,6 +18,7 @@ function UserList({ users }) {
               }}
             >
               <p><strong>Name:</strong> {user.name}</p>
+              <p><strong>Phone:</strong> {user.phone}</p>
               <p><strong>Email:</strong> {user.email}</p>
             </li>
           ))}

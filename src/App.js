@@ -7,7 +7,8 @@ import React from 'react';
 // import Lifecycle from "./Component/pages/6-Lifecycle-method/lifecycle";
 // import MaruuseEffect from "./Component/pages/6-Lifecycle-method/useEffect";
 // import MyAllHooks from './Component/pages/7-Hooks/AllHooks'
-import FirstTask from "./Tasks/1-task/MainTask"
+// import FirstTask from "./Tasks/1-task/MainTask"
+import ConditionalRendering from "./Component/pages/8-Conditional-Rendering/Main-condition"
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       {/* <Lifecycle/> */}
       {/* <MaruuseEffect/> */}
       {/* <MyAllHooks/> */}
-      <FirstTask/>
+      {/* <FirstTask/> */}
+      <ConditionalRendering/>
     </div>
   );
 }
