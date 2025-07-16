@@ -1,4 +1,4 @@
-# 🚀 React App Starter.
+# 🚀 React App Starter
 
 A modern web application built with [React.js](https://reactjs.org/), including best practices for project structure, component-based architecture, and state management.
 
